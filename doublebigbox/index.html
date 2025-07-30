@@ -68,23 +68,34 @@
     
     /* S1 */
     #sponsors * {
-      animation: fadeInMove 400ms forwards 0ms;
+      animation: fadeInMove 400ms forwards 0ms,
+      fadeOut 400ms forwards 6s,
+      fadeInMove 400ms forwards 6.6s;
     }
     #artwork * {
-      animation: fadeInMove 600ms forwards 200ms, bounceIn 700ms cubic-bezier(.68,-0.55,.27,1.55) 800ms 1 forwards;
+      animation: fadeInMove 600ms forwards 200ms,
+      fadeOut 400ms forwards 6s,
+      fadeInMove 400ms forwards 6.8s
+      ;
     }
 
     #desc {
-      animation: fadeInMove 800ms forwards 400ms;
+      animation: fadeInMove 800ms forwards 400ms,
+      fadeOut 400ms forwards 6s,
+      fadeInMove 800ms forwards 7s;
     }
     
     #register,
     #btn {
-      animation: fadeInMove 1000ms forwards 600ms;
+      animation: fadeInMove 1000ms forwards 600ms,
+      fadeOut 400ms forwards 6s,
+      fadeInMove 1000ms forwards 7.2s;
     }
 
     #logo, #date {
-      animation: fadeInMove 1200ms forwards 800ms;
+      animation: fadeInMove 1200ms forwards 800ms,
+      fadeOut 400ms forwards 6s,
+      fadeInMove 1200ms forwards 7.4s;
     }
     
     @keyframes fadeInMove {
@@ -95,11 +106,19 @@
     }
     
     @keyframes fadeOut {
-      to {
+      0% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      80% {
         opacity: 0;
+        transform: translateY(0px);
+      }
+      100%  {
+        opacity: 0;
+        transform: translateY(20px);
       }
     }
-    
   </style>
 </head>
 <body>
@@ -148,7 +167,6 @@
 </svg>
 <!-- SVG AREA END -->
 
-      
       <div class="progress-bar-container">
         <div class="progress-bar"></div>
       </div>
