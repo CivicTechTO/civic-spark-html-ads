@@ -1,0 +1,24 @@
+title: Civic Spark HTML Ads
+author:
+  name: Civic Tech Toronto
+  email: hi@civictech.ca
+
+description: >-
+  Civic Spark HTML Ads is a collection of HTML ads for Civic Tech Toronto's Civic Spark event.
+baseurl: ""
+github_username: civictechto
+
+timezone: America/Toronto
+future: true
+
+exclude:
+  - .gitignore
+  - .gitmodules
+  - README.md
+  - LICENSE
+  - bigbox.zip
+  - doublebigbox.zip
+  - leaderboard.zip
+  - mobilebanner.zip
+
+use_html_extension: false
